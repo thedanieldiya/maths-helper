@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maths Helper</title>
+    <script src="script.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,regular,500,600,700" rel="stylesheet" />
 </head>
 <body>
-    
+    <h1>Line Graph Generator</h1>
+    <div>
+        <label for="xValues">X-axis values:</label>
+        <input type="text" id="xValues" placeholder="Enter X-axis values">
+    </div>
+    <div>
+        <label for="yValues">Y-axis values:</label>
+        <input type="text" id="yValues" placeholder="Enter Y-axis values">
+    </div>
+    <button id="generateGraph">Generate Graph</button>
+    <div id="graphContainer">
+        <!-- The line graph will be displayed here -->
+    </div>
 </body>
 </html>
